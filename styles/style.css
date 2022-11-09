@@ -1,0 +1,140 @@
+/*
+
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    /* margin: 0; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    background: hsl(30, 38%, 92%);
+}
+
+main {
+    background: hsl(0, 0%, 100%);
+    max-height: 450px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;   
+}
+
+article {
+    margin: 0 30px;
+}
+
+img {
+    max-height: 450px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.875em;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.5em;
+    padding: 10px 0;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.125em;
+    line-height: 0.9em;
+    color: hsl(212, 21%, 14%);
+    padding: 10px 0;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 1.5em;
+    color: hsl(228, 12%, 48%);
+    padding: 20px 0;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.25em;
+    color: hsl(158, 36%, 37%);
+    padding: 20px 0;
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.prior-price {
+    font-weight: 700;
+    font-size: 1.125em;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+button {
+    background: hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin: 20px 0;
+    min-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875em;
+}
+
+button:hover {
+    background: hsl(156, 42.2%, 17.6%);
+    cursor:pointer;
+}
+
+button img{
+    padding: 0 10px;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        max-width: 345px;
+        max-height: none;
+    }
+    img {
+        max-width: 100%;
+        max-height: none;
+    }
+    h1 {
+        padding-top: 20px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .description {
+        font-size: 0.875em;
+    }
+    .description, .price, .prior-price {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    button {
+        margin: 10px 0;
+    }
+}
